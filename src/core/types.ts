@@ -92,10 +92,13 @@ declare global {
       pubads: () => {
         setTargeting: (key: string, value: string | string[]) => void;
         refresh: () => void;
-      }
+      };
     };
     pbjs?: {
       setTargetingForGPTAsync: (targeting: Record<string, unknown>) => void;
+    };
+    NewsPassID?: {
+      createNewsPassID: (config: NewsPassConfig) => NewsPassID;
     };
   }
 }

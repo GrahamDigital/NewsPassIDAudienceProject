@@ -31,6 +31,7 @@ module.exports = [
         type: 'umd',
         export: 'default',
       },
+      globalObject: 'this',
     },
   },
   // Async loader
